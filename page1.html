@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Maembe Day Care</title>
+</head>
+
+<body>
+
+    </section>
+
+    <div class="container">
+        <header>
+            <h1>WELCOME TO MAEMBE DAY CARE</h1>
+        </header>
+        <h3 id="clock"></h3>
+        <section class="slider-section">
+            <img id="slider" src="day1.png" alt="Image Slider">
+
+            <nav>
+                <a href="page1.html">Home</a> |
+                <a href="page2.html">About Us</a> |
+                <a href="page3.html">Contact Us</a> |
+            </nav>
+
+
+            <section id="WQ">
+                <h2> Our Core Values</h2>
+                <ol>
+                    <li>Love</li>
+                    <li>Responsibility</li>
+                    <li>Integrity</li>
+                    <li>Respect</li>
+                    <li>Hard Work</li>
+                    <li>Respect</li>
+                    <li>Team Work</li>
+                </ol>
+
+                <h2>Our Services</h2>
+                <ul type="square">
+                    <li>Child's Good Care</li>
+                    <li>Early Learning</li>
+                    <li>Sports, Games and Recreation</li>
+                    <li>Healthy Monitoring</li>
+                    <li>Effective but Professional follow up</li>
+
+                </ul>
+
+                <h2>Working Hours 12/7</h2>
+                <table border="1" table-radius="10px" width="Auto" margin="Auto">
+                    <tr>
+                        <th>Day</th>
+                        <th>Opening</th>
+                        <th>Closing</th>
+                    </tr>
+                    <tr>
+                        <td>Monday-Friday</td>
+                        <td>07:00am</td>
+                        <td>06:30</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday and Sunday</td>
+                        <td>07:00am</td>
+                        <td>01:30</td>
+                    </tr>
+                </table>
+
+
+            </section>
+
+            <script>
+                function updateClock() {
+                    let now = new Date();
+                    document.getElementById("clock").innerHTML =
+                        now.toLocaleTimeString();
+                }
+
+                setInterval(updateClock, 1000);
+            </script>
+            <script>
+                window.onload = function () {
+                    alert("Welcome to Maembe DayCare!");
+                }
+            </script>
+
+            <script>
+                let images = [
+                    "day1.png",
+                    "day2.png",
+                    "day3.png",
+                    "day4.png",
+                    "day6.png",
+
+                ];
+
+                let index = 0;
+
+                function changeImage() {
+                    index++;
+
+                    if (index >= images.length) {
+                        index = 0;
+                    }
+
+                    document.getElementById("slider").src = images[index];
+                }
+
+                setInterval(changeImage, 3000); 
+            </script>
+
+
+
+            <footer>
+                @XLYGER
+                All Rights Reserved...&copy;2026 Maembe DayCare
+            </footer>
+
+    </div>
+
+    </div>
+</body>
+
+</html>
